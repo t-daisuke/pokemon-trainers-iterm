@@ -73,7 +73,8 @@ mew
 
 **Available Settings**:
 - **Pokemon Names**: Use English names (e.g., `pikachu`, `charizard`, `blastoise`)
-- **Random Specification**: Lines with `random` show completely random Pokemon
+- **Random Specification**: Lines with `random` randomly execute `pokemon -d`, `pokemon -l`, or `pokemon`
+- **Direct Option Specification**: Use `-d` or `-l` to execute with corresponding options
 - **Empty Lines**: Automatically ignored
 
 #### Example: Powerful Pokemon Team
@@ -86,6 +87,16 @@ garchomp
 dragapult
 ```
 
+#### Example: Mixed Options Team
+```txt
+pikachu
+-d
+-l
+random
+charizard
+random
+```
+
 #### Example: Starter Pokemon Team
 ```txt
 bulbasaur
@@ -95,6 +106,10 @@ chikorita
 cyndaquil
 totodile
 ```
+
+**Option Descriptions**:
+- `-d`: Display Pokemon in dark mode
+- `-l`: Display Pokemon in light mode
 
 ## 🎨 Layout
 

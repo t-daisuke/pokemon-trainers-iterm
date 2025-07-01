@@ -73,7 +73,8 @@ mew
 
 **利用可能な設定**:
 - **ポケモン名**: 英語名で記述（例: `pikachu`, `charizard`, `blastoise`）
-- **ランダム指定**: `random`と記述した行は完全ランダムポケモン
+- **ランダム指定**: `random`と記述した行は`pokemon -d`、`pokemon -l`、`pokemon`のいずれかをランダム実行
+- **直接オプション指定**: `-d`、`-l`と記述すると対応するオプションで実行
 - **空行**: 自動的に無視されます
 
 #### 例: 強力なポケモンチーム
@@ -86,6 +87,16 @@ garchomp
 dragapult
 ```
 
+#### 例: オプション混合チーム
+```txt
+pikachu
+-d
+-l
+random
+charizard
+random
+```
+
 #### 例: 御三家チーム
 ```txt
 bulbasaur
@@ -95,6 +106,10 @@ chikorita
 cyndaquil
 totodile
 ```
+
+**オプション説明**:
+- `-d`: ダークモードでポケモンを表示
+- `-l`: ライトモードでポケモンを表示
 
 ## 🎨 レイアウト
 

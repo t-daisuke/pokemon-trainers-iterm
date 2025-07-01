@@ -67,12 +67,30 @@ tell application "iTerm2"
       if i ≤ (count of pokemonList) then
         set pokemonName to item i of pokemonList
         if pokemonName is "random" then
-          write text "pokemon"
+          -- ランダムポケモンの場合、追加オプションを設定
+          set randomOptions to {"-d", "-l", ""}
+          set selectedOption to item (random number from 1 to 3) of randomOptions
+          if selectedOption is "" then
+            write text "pokemon"
+          else
+            write text "pokemon " & selectedOption
+          end if
+        else if pokemonName is "-d" then
+          write text "pokemon -d"
+        else if pokemonName is "-l" then
+          write text "pokemon -l"
         else
           write text "pokemon -n " & pokemonName
         end if
       else
-        write text "pokemon"
+        -- リストにない場合もランダムオプションを使用
+        set randomOptions to {"-d", "-l", ""}
+        set selectedOption to item (random number from 1 to 3) of randomOptions
+        if selectedOption is "" then
+          write text "pokemon"
+        else
+          write text "pokemon " & selectedOption
+        end if
       end if
       delay 1.0
     end tell
