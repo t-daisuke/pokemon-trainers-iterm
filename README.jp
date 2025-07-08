@@ -1,4 +1,4 @@
-# Pokemon Master 🎮⚡
+# Pokemon-trainers-iterm 🎮⚡
 
 **Pokemon-Terminalを使ったiTerm2自動化ツール**
 
@@ -32,7 +32,7 @@ npm install -g pokemon-terminal
 ## 📁 プロジェクト構成
 
 ```
-pokemon_master/
+pokemon-trainers-iterm/
 ├── pokemon.scpt          # メインAppleScript
 ├── pokemon_list.txt      # ポケモンリスト設定ファイル
 ├── re.scpt              # 参考スクリプト
@@ -46,7 +46,7 @@ pokemon_master/
 
 1. **プロジェクトディレクトリに移動**:
    ```bash
-   cd /path/to/pokemon_master
+   cd /path/to/pokemon-trainers-iterm
    ```
 
 2. **スクリプトを実行**:

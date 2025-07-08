@@ -15,11 +15,11 @@ tell application "iTerm2"
     end repeat
     set pokemonList to cleanList
     
-    display notification "pokemon_list.txtからポケモンを読み込みました" with title "Pokemon Master"
+    display notification "pokemon_list.txtからポケモンを読み込みました" with title "Pokemon-trainers-iterm"
   on error
     -- ファイルがない場合は、ランダムなポケモンを使用
     set pokemonList to {"random", "random", "random", "random", "random", "random"}
-    display notification "pokemon_list.txtが見つからないため、ランダムポケモンを使用します" with title "Pokemon Master"
+    display notification "pokemon_list.txtが見つからないため、ランダムポケモンを使用します" with title "Pokemon-trainers-iterm"
   end try
   
   -- 1) 新しいウィンドウを作成
@@ -101,5 +101,5 @@ tell application "iTerm2"
   repeat with pokemonName in pokemonList
     set pokemonNames to pokemonNames & pokemonName & " "
   end repeat
-  display notification "6匹のポケモンセットアップ完了！" & pokemonNames with title "Pokemon Master"
+  display notification "6匹のポケモンセットアップ完了！" & pokemonNames with title "Pokemon-trainers-iterm"
 end tell

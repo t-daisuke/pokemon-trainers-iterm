@@ -1,4 +1,4 @@
-# Pokemon Master 🎮⚡
+# Pokemon-trainers-iterm 🎮⚡
 
 **iTerm2 automation tool using Pokemon-Terminal**
 
@@ -32,7 +32,7 @@ npm install -g pokemon-terminal
 ## 📁 Project Structure
 
 ```
-pokemon_master/
+pokemon-trainers-iterm/
 ├── pokemon.scpt          # Main AppleScript
 ├── pokemon_list.txt      # Pokemon list configuration file
 ├── re.scpt              # Reference script
@@ -46,7 +46,7 @@ pokemon_master/
 
 1. **Navigate to project directory**:
    ```bash
-   cd /path/to/pokemon_master
+   cd /path/to/pokemon-trainers-iterm
    ```
 
 2. **Run the script**:
