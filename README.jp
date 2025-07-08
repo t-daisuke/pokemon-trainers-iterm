@@ -35,7 +35,6 @@ npm install -g pokemon-terminal
 pokemon-trainers-iterm/
 ├── pokemon.scpt          # メインAppleScript
 ├── pokemon_list.txt      # ポケモンリスト設定ファイル
-├── re.scpt              # 参考スクリプト
 ├── README.jp            # 日本語説明書（このファイル）
 └── README.md            # English documentation
 ```
