@@ -1,5 +1,8 @@
 # Pokemon-trainers-iterm 🎮⚡
 
+<img width="2054" height="1288" alt="image" src="https://github.com/user-attachments/assets/8f336616-975f-4b23-ab98-e52db12e18dd" />
+
+
 **iTerm2 automation tool using Pokemon-Terminal**
 
 Let's start an adventure with Pikachu! An AppleScript tool that automatically splits iTerm2 into 6 panes and sets different Pokemon backgrounds for each pane.
